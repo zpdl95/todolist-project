@@ -1,0 +1,43 @@
+.header {
+  height: 13%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 15px;
+
+  transition: all 150ms ease;
+
+  & nav {
+    width: 60%;
+
+    font-weight: 600;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    text-transform: capitalize;
+
+    transition: all 150ms ease;
+
+    cursor: pointer;
+
+    & span {
+      opacity: 0.8;
+    }
+    & span.active {
+      border-bottom: 2px solid gray;
+      opacity: 1;
+    }
+    & span:hover {
+      opacity: 1;
+    }
+  }
+}
+.headerColor {
+  background-color: var(--theme-color-dark);
+  & nav {
+    color: var(--theme-color-active-light);
+  }
+}
